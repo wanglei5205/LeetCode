@@ -1,6 +1,6 @@
 《剑指offer》C++版  
 =
-以下是[【我的博客】](http://www.cnblogs.com/wanglei5205/)中写的解题思路，将《剑指offer》中的题目做了归类和总结，以方便复习。<br>
+以下链接是[我的博客](http://www.cnblogs.com/wanglei5205/)中写的解题思路，现在将《剑指offer》中的题目做了归类和总结，以方便复习。<br>
 
 递归与循环
 -
