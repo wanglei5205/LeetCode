@@ -1,17 +1,10 @@
 #include<iostream>
 using namespace std;
 
-void replace_space(int length,char *str);
-
-int main()
-{   int length = 25;
-    char a[length]="123 456 7 8 9 ";
-    for(int i=0;i<length;i++)
-        cout<<a[i]<<endl;
-    replace_space(length,a);
-    return 0;
-
-}
+/*
+* 功能：替换空格
+* 参数：字符数组长度length和指向字符数组的指针
+*/
 void replace_space(int length,char *str)
 {
     // 边界条件（空）
@@ -37,7 +30,7 @@ void replace_space(int length,char *str)
         cout<<count_new<<endl;
 
         // 边界条件（越界）
-        if(count_new<length)
+        if(count_new!=length)
         {
             cout<<"测试点"<<endl;
             char *p1=str+count_old;
@@ -62,5 +55,17 @@ void replace_space(int length,char *str)
             cout<<str[j]<<endl;
         }
     }
+}
+
+int main()
+{
+    int length = 25;
+    char a[length]="123 456 7 8 9 ";
+
+    for(int i=0;i<length;i++)
+        cout<<a[i]<<endl;
+
+    replace_space(length,a);
+    return 0;
 
 }
