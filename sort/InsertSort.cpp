@@ -1,27 +1,27 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
-void insertSort(int temp_sort[],int n)
+void insertSort(vector<int> vec)
 {
-    int temp=0;
-
-    for(int i=1;i<n;++i)
+    for(int i=1;i<vec.size();++i)
     {
         int j = i;
-        while(j>0 && temp_sort[j-1]>temp_sort[j])
+
+        while(j-1>=0 && vec[j-1]>vec[j])
         {
-            temp = temp_sort[j-1];
-            temp_sort[j-1] = temp_sort[j];
-            temp_sort[j]=temp;
+            vec[j-1] = vec[j-1]+vec[j];
+            vec[j]   = vec[j-1]-vec[j];
+            vec[j-1] = vec[j-1]-vec[j];
             --j;
         }
     }
-    for(int i=0;i<n;++i)
-        cout<<temp_sort[i]<<endl;
+    for(int i=0;i<vec.size();++i)
+        cout<<vec[i]<<endl;
 }
 int main()
 {
-    int temp_sort[5]={9,3,1,4,2};
-    insertSort(temp_sort,5);
+    vector<int> vec={9,3,1,4,2};
+    insertSort(vec);
     return 0;
 }
