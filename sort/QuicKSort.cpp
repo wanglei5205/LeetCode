@@ -9,12 +9,12 @@ int partition(vector<int> &a, int low, int high)
     int key = a[low];
     while(low < high)
     {
-        //
+        // 从右侧找小于pivot的值，替换low位置的元素
         while(low < high && a[high] >= key)
             --high;
         a[low] = a[high];
 
-        //
+        // 从左侧找大于pivot的值，替换high位置的元素
         while(low < high && a[low] <= key)
             ++low;
         a[high] = a[low];
