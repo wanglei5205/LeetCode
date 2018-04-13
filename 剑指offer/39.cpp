@@ -38,7 +38,7 @@ int fun(vector<int> num)
 }
 int main()
 {
-    vector<int> num ={1,2,3,3,2,2,2};
+    vector<int> num ={1,2,3,3,2,2,2,222};
     cout<<fun(num)<<endl;
     return 0;
 }
