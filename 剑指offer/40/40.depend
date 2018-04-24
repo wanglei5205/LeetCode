@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1523624146 source:g:\sword_offer\c++\40\main.cpp
+	<iostream>
+	<vector>
+	<set>
+

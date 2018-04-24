@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1523759688 source:g:\sword_offer\c++\45\main.cpp
+	<iostream>
+	<string>
+	<vector>
+	<algorithm>
+
