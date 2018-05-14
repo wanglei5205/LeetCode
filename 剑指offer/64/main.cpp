@@ -9,8 +9,8 @@ public:
     {
         // 逻辑与的短路特性作为递归结束条件
         int res = n;
-        n && (res += Sum_Solution(n-1));
-        cout<<res<<endl;
+        n && (res += Sum_Solution(n-1));    // 易错点：忘记加括号
+        //cout<<res<<endl;
         return res;
     }
 };
