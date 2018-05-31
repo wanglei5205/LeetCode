@@ -37,13 +37,4 @@ public:
         return res;
     }
 };
-int main()
-{
-    // 建立链表
 
-    // 从尾到头打印链表
-    Solution solution;
-    solution.printListFromTailToHead(head);
-
-    return 0;
-}

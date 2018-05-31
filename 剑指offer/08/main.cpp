@@ -1,7 +1,4 @@
 /* 08二叉树的下一个节点（中序遍历）*/
-#include <iostream>
-using namespace std;
-
 class Solution{
 public:
     // 返回值：节点的下一个节点的地址
@@ -35,7 +32,4 @@ public:
         return res;
     }
 };
-int main()
-{
-    return 0;
-}
+

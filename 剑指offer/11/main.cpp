@@ -30,18 +30,19 @@ public:
             // 计算中间指针位置
             mid = left + (right - left) / 2;
 
-            //特殊情况：如果无法确定中间元素是属于前面还是后面的递增子数组，只能顺序查找
+            /* 顺序查找 */
+            // 如果无法确定中间元素是属于前面还是后面的递增子数组，只能顺序查找
             if(rotateArray[left] == rotateArray[right] && rotateArray[mid] == rotateArray[left]){
                 return MinInOrder(rotateArray, left, right);
             }
+
+            /* 二分查找 */
             //中间元素位于前面的递增子数组，此时最小元素位于中间元素的后面
-            if(rotateArray[mid] >= rotateArray[left]){
+            if(rotateArray[mid] >= rotateArray[left])
                 left = mid;
-            }
             //中间元素位于后面的递增子数组，此时最小元素位于中间元素的前面
-            else{
+            else
                 right = mid;
-            }
         }
         return rotateArray[mid];
     }
@@ -60,7 +61,7 @@ private:
 int main()
 {
     Solution solution;
-    vector<int> rotateArray = {4,5,1,2,3,4};
+    vector<int> rotateArray = {4,5,1,2,3};
     cout<<solution.minNumberInRotateArray(rotateArray)<<endl;
     return 0;
 }

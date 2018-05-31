@@ -1,6 +1,7 @@
 /* 05 Ìæ»»¿Õ¸ñ */
 #include <iostream>
 using namespace std;
+
 class Solution{
 public:
     void replaceSpace(char *str,int length)

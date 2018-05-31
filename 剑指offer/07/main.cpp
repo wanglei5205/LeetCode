@@ -12,6 +12,7 @@ struct TreeNode {
 
 class Solution {
 public:
+
     TreeNode* reConstructBinaryTree(vector<int> pre,vector<int> vin)
     {
         // µÝ¹é³ö¿Ú

@@ -11,7 +11,7 @@ public:
 
         // 递推公式计算
         int res = 0;
-        for(int i = 2; i <= n; i++)
+        for(int i = 2; i <= n; ++i)
         {
             res = (res + m)%i;
             cout<<res<<endl;
@@ -21,7 +21,7 @@ public:
 };
 int main()
 {
-    int n = 11;
+    int n = 7;
     int m = 3;
     Solution solution;
     solution.LastRemaining_Solution(n,m);

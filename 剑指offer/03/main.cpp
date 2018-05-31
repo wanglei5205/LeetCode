@@ -1,19 +1,7 @@
 #include <iostream>
-
 using namespace std;
-
 class Solution {
 public:
-
-    /*
-    函数参数：
-        numbers数组
-        length数组长度
-        duplication重复数字
-    函数返回值：
-        bool类型，true表示存在重复数字，false表示不存在重复数字
-    */
-
     bool duplicate(int numbers[], int length, int* duplication)
     {
         /* 特殊输入检查 */
@@ -48,7 +36,6 @@ public:
 
             }
         }
-
         return false;
     }
 };
