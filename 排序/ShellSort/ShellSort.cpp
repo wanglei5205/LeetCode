@@ -3,9 +3,10 @@
 using namespace std;
 void ShellSort(vector<int>vec)
 {
+		// 希尔排序
     for(int gap=vec.size()/2;gap>0;gap/=2)
     {
-
+				// 直接插入排序 
         for(int i=gap;i<vec.size();++i)
         {
             int j=i;
@@ -18,7 +19,8 @@ void ShellSort(vector<int>vec)
             }
         }
     }
-
+		
+		// 打印输出
     for(int i=0;i<vec.size();++i)
     {
         cout<<vec[i]<<endl;

@@ -22,7 +22,8 @@ string PrintMinNumber(vector<int> numbers)
 
     // ÅÅĞò
     sort(numbers.begin(), numbers.end(), cmp);
-
+    for(int i =0;i<numbers.size();++i)
+        cout<<numbers[i]<<endl;
     // Æ´½Ó
     for(int i = 0;i < numbers.size();++i)
         res += to_string(numbers[i]);
@@ -32,7 +33,7 @@ string PrintMinNumber(vector<int> numbers)
 
 int main()
 {
-    vector<int> numbers = {3,32,321};
+    vector<int> numbers = {7,32,51};
     string res = PrintMinNumber(numbers);
     cout<<res<<endl;
     return 0;

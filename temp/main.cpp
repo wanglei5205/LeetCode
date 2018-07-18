@@ -4,9 +4,12 @@ using namespace std;
 
 int main()
 {
-    vector<int> res ;
-    for(int i=0;i<10;++i)
-    res.push_back(6);
-    return 0;
+    int a = 100;
+    int b = 20;
+    if(a-b ==0 && b == 10)
+        cout<<"xx"<<endl;
+
+        cout<<a<<endl;
+
 
 }

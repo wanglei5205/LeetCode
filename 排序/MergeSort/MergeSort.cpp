@@ -4,7 +4,7 @@ using namespace std;
 int n;
 int a[N], t[N];
 
-/* 治 */
+/* 合 */
 //下标从0开始
 void Merge(int a[], int l, int m, int r)
 {
@@ -53,11 +53,14 @@ void MergeSort(int a[], int l, int r)
 }
 int main()
 {
+    // 输入测试用例
     cin >> n;
     for(int i = 0; i < n; i++) cin >> a[i];
 
+    // 归并排序
     MergeSort(a, 0, n - 1);
 
+    // 打印排序结果
     for(int i = 0; i < n; i++) cout << a[i] << " ";
 
     return 0;
